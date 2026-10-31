@@ -1,6 +1,8 @@
-# pmt2018.github.io
+# Soaked.page
 
-个人学术主页与学习资料库，使用 Astro 构建并部署到 GitHub Pages。
+个人主页与学习资料库，使用 Astro 构建并部署到 GitHub Pages。
+
+Fork 自 [pmt2018](https://pmt-2018.github.io/).
 
 ## 本地开发
 

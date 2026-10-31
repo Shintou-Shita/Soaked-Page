@@ -1,10 +1,7 @@
 import type { CollectionEntry } from 'astro:content';
 
 const categoryLabels: Record<string, string> = {
-  'data-structures': '数据结构',
-  graph: '图论',
-  dp: '动态规划',
-  tools: '工具与写作',
+  example: '示例文章',
   others: '其他笔记',
 };
 

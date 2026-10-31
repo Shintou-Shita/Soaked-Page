@@ -2,11 +2,10 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 
 export default defineConfig({
-  site: 'https://pmt-2018.github.io',
+  site: 'https://soaked-page.soaked.top',
   integrations: [mdx()],
   redirects: {
     '/algorithms/': '/notes/',
-    '/algorithms/graph/example/': '/notes/graph/example/',
   },
   markdown: {
     remarkPlugins: [remarkMath],

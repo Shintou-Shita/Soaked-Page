@@ -17,26 +17,22 @@ export function buildSidebar(
   noteEntries: CollectionEntry<'notes'>[],
 ): SidebarItem[] {
   if (pathname.startsWith('/teaching')) {
-    const semester = '/teaching/nju-ps/2026-fall/';
     const lectures = teachingEntries
-      .filter((entry) => entry.slug.startsWith('nju-ps/2026-fall/lectures/'))
+      .filter((entry) => entry.slug.startsWith('ps1/handouts/'))
       .sort((a, b) => (a.data.week ?? 999) - (b.data.week ?? 999) || a.slug.localeCompare(b.slug))
       .map((entry) => link(entry.data.title, `/teaching/${entry.slug}/`));
 
     return [
       {
-        label: 'NJU Problem Solving',
+        label: '问题求解',
         href: '/teaching/',
         children: [
           {
-            label: '2026 秋',
-            href: semester,
+            label: '问题求解一',
+            href: '/teaching/ps1',
             children: [
-              link('课程概览', semester),
-              link('课程安排', `${semester}schedule/`),
+              link('课程概览', '/teaching/ps1/outline'),
               ...(lectures.length ? [{ label: '讲义', children: lectures }] : []),
-              link('OJ 题解', `${semester}oj/`),
-              link('常见问题与调试', `${semester}faq/`),
             ],
           },
         ],

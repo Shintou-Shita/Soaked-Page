@@ -14,7 +14,7 @@ interface Props {
   headings?: { depth: number; slug: string; text: string }[];
 }
 
-const { title = 'pmt2018', description = '个人学术主页与学习资料库', headings = [] } = Astro.props;
+const { title = 'Soaked', description = '个人学术主页与学习资料库', headings = [] } = Astro.props;
 const pathname = Astro.url.pathname;
 const navigation = [
   { href: '/', label: '首页', icon: 'home' },
@@ -36,13 +36,13 @@ const sidebarItems = buildSidebar(pathname, teachingEntries, noteEntries);
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <link rel="icon" href="data:," />
-    <title>{title} · pmt2018</title>
+    <title>{title} · Soaked</title>
   </head>
   <body>
     <a class="skip-link" href="#main-content">跳至正文</a>
     <div class="site-shell">
       <header class="site-header">
-        <a class="site-title" href="/">pmt2018</a>
+        <a class="site-title" href="/">Soaked</a>
         <details class="mobile-menu">
           <summary><span class="icon-label"><Icon name="menu" />菜单</span></summary>
           <nav aria-label="主导航">
@@ -75,7 +75,7 @@ const sidebarItems = buildSidebar(pathname, teachingEntries, noteEntries);
         ) : <slot />}
       </main>
       <footer class="site-footer">
-        <span>pmt2018 · 教学材料与学习笔记</span>
+        <span>Soaked · 教学材料与学习笔记</span>
         <nav class="footer-links" aria-label="补充链接">
           <a href="/cv/" aria-current={pathname === '/cv/' ? 'page' : undefined}><span class="icon-label"><Icon name="file" />简历</span></a>
           <a href="/license/" aria-current={pathname === '/license/' ? 'page' : undefined}>许可</a>

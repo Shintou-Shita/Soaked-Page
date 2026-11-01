@@ -3,7 +3,7 @@ title: "LB1: 计算机基础知识"
 description: "no comments"
 published: true
 publishedDate: 2026-10-30
-updatedDate: 2026-10-30
+updatedDate: 2026-11-01
 ---
 
 ### 二进制

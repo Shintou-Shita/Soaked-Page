@@ -3,7 +3,7 @@ title: "LA2: 算法与设计"
 description: "no comments"
 published: true
 publishedDate: 2026-10-30
-updatedDate: 2026-10-30
+updatedDate: 2026-11-01
 ---
 
 ### 一些概念

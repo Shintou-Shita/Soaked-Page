@@ -94,7 +94,7 @@ const editorRows = Math.min(24, Math.max(8, resolvedCode.trimEnd().split('\n').l
   label { display: grid; gap: .45rem; font-size: .95rem; font-weight: 600; }
   label span, h4 span { margin-left: .25rem; color: #666; font-size: .85rem; font-weight: 400; }
   .cpp-input-panel label { display: block; margin-bottom: .5rem; }
-  textarea { display: block; width: 100%; resize: vertical; padding: .65rem .75rem; border: 1px solid #ccc; border-radius: .25rem; background: #fff; color: #262626; font: 1rem/1.65 ui-monospace, SFMono-Regular, Consolas, monospace; tab-size: 4; }
+  textarea { display: block; width: 100%; resize: vertical; padding: .65rem .75rem; border: 1px solid #ccc; border-radius: .25rem; background: #fff; color: #262626; font-family: var(--font-mono); font-size: 1rem; line-height: 1.65; tab-size: 4; }
   button { display: inline-flex; align-items: center; gap: .35rem; padding: .4rem .8rem; border: 1px solid #ccc; border-radius: .25rem; background: white; color: #262626; font: inherit; font-size: .9rem; cursor: pointer; }
   button[data-action="run"] { border-color: var(--accent-dark); background: var(--accent-dark); color: white; padding-inline: 1.2rem; }
   button:disabled { opacity: .6; cursor: default; }
@@ -103,7 +103,7 @@ const editorRows = Math.min(24, Math.max(8, resolvedCode.trimEnd().split('\n').l
   .cpp-output-panel h3 { margin: 0 0 .65rem; font-size: .95rem; }
   .cpp-output-panel h4 { margin: .75rem 0 .35rem; font-size: .9rem; }
   .cpp-stdout-panel h4 { margin-top: 0; }
-  .cpp-output-panel pre, .cpp-modified-code { min-height: 0; max-height: none; margin: 0; padding: .25rem 0; border: 0; border-radius: 0; background: transparent; white-space: pre-wrap; overflow-wrap: anywhere; font: .9rem/1.65 ui-monospace, SFMono-Regular, Consolas, monospace; }
+  .cpp-output-panel pre, .cpp-modified-code { min-height: 0; max-height: none; margin: 0; padding: .25rem 0; border: 0; border-radius: 0; background: transparent; white-space: pre-wrap; overflow-wrap: anywhere; font-family: var(--font-mono); font-size: .9rem; line-height: 1.65; }
   .cpp-modified-code { padding: 1rem; }
   .cpp-modified-code code { padding: 0; background: none; }
   .cpp-empty { color: #666; font-family: inherit; }

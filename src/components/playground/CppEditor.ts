@@ -49,7 +49,7 @@ export function createCppEditor(parent: HTMLElement, source: HTMLTextAreaElement
       }),
       EditorView.theme({
         '&': { fontSize: '1rem', backgroundColor: '#faf9fc', color: '#262626' },
-        '.cm-scroller': { fontFamily: 'ui-monospace, SFMono-Regular, Consolas, monospace', lineHeight: '1.65' },
+        '.cm-scroller': { fontFamily: 'var(--font-mono)', lineHeight: '1.65' },
         '.cm-content': { padding: '1rem 0', minHeight: '12rem' },
         '.cm-line': { padding: '0 1rem' },
         '.cm-gutters': { backgroundColor: '#faf9fc', color: '#666', borderRight: '1px solid #e8e6eb' },

@@ -5,6 +5,7 @@
   --accent-dark: #6d3fd1;
   --line: #e8e6eb;
   --muted: #666;
+  --font-mono: "Noto Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.7;
@@ -13,6 +14,7 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; }
+code, pre, kbd, samp { font-family: var(--font-mono); }
 a { color: inherit; }
 a:hover { color: var(--accent-dark); }
 .icon-label { display: inline-flex; align-items: center; gap: .4rem; }
